@@ -1,0 +1,164 @@
+/* 媒体查询 当页面宽度小于765px时执行里面的代码 */
+@media (max-width: 765px) {
+
+    .w,
+    .container {
+        width: 100% !important;
+    }
+
+    .logo>img {
+        content: url(../images/logo1.svg);
+    }
+
+    .nav .nav-list {
+        display: none;
+    }
+
+    .nav-input {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 80% !important;
+    }
+
+    .nav-input .btn {
+        display: none;
+    }
+
+    .homepage {
+        right: -80px;
+    }
+
+    .nav-list-bottom .nav-list>li:first-child {
+        margin-left: 5px;
+    }
+
+    .container .nav-list>li:nth-child(n+7),
+    .index-aside {
+        display: none;
+    }
+
+    .gd {
+        z-index: 999;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+    }
+
+    .search {
+        margin-left: 30px;
+        width: 180px !important;
+    }
+
+    .search:focus {
+        width: 200px !important;
+    }
+
+    .sticky-block-box,
+    .article-aside-display {
+        display: none;
+    }
+}
+
+.infobox .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d2129;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.infobox a:last-child {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    color: #86909c;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+.index-aside {
+    height: 300px;
+    position: absolute !important;
+    right: 0;
+}
+
+.aside-top {
+    background-color: #fff;
+    height: 96px;
+    margin-bottom: 16px;
+    line-height: 96px;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.more-list .item {
+    float: left;
+    font-size: 12px;
+    line-height: 22px;
+
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-right: 18px;
+}
+
+.more-list .item a {
+    color: #86909c;
+}
+
+.icon {
+    width: 24px;
+    cursor: pointer;
+}
+
+/*悬浮广告start*/
+aside .aside-adv {
+    position: fixed;
+    display: none;
+    right: 325px;
+    top: 140px;
+}
+
+aside .aside-adv img {
+    width: 270px;
+}
+
+aside .aside-adv .close-btn {
+    position: absolute;
+    top: 0px;
+    left: 248px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+/*悬浮广告end*/
+
+@media (max-width: 1460px) {
+    aside .aside-adv {
+        display: none !important;
+    }
+}
+
+.meta-container {
+    color: #4e5969;
+}
